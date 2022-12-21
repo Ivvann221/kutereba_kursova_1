@@ -1,0 +1,48 @@
+.story {
+
+  &__content {
+    border-top: 1px solid $primary-color;
+    display: flex;
+
+    @media screen and (max-width: 576px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_item {
+
+
+      @media screen and (max-width: 576px) {
+        padding: 40px 20px;
+
+        min-width: 100% !important;
+        order: 2 !important;
+      }
+    }
+
+    &_img {
+      background: url('../img/depositphotos_19568547-stock-photo-burning-log-and-fire.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 320px;
+      min-width: 30%;
+
+      @media screen and (max-width:850px) {
+        min-width: 50%;
+      }
+
+      @media screen and (max-width: 576px) {
+        width: 100%;
+        order: 1;
+        height: 300px;
+
+      }
+    }
+  }
+  .-border {
+    border-bottom: 1px solid $primary-color;
+
+  }
+
+}

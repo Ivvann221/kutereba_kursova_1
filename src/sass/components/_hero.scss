@@ -1,51 +1,33 @@
 .hero {
+    &__item {
+        width: 50%;
+        order: 1;
 
-    
-
-    &__title {
-        margin-top: 150px;
-        font-size: 35px;
-        margin-left: 30px;
+        @media screen and (max-width: 576px) {
+            width: 100% !important;
+            order: 2;
+            padding: 40px 20px;
+        }
     }
-
-   
-
-    &__subtitle {
-        margin-top: 20px;
-        font-size:18px;
-        margin-left: 30px;
-        padding-right: 100px;
-    }
-
-    
-
-    &__btn {
-        margin-top: 25px;
-        border: 1px solid rgb(189, 189, 189);
-        padding: 8px 14px;
-        display: inline-block;
-            text-decoration: none;
-            color: rgb(189, 189, 189);
-            border-radius: 5px;
-            margin-left: 30px;
-            &:hover{
-                background-color: rgb(136, 134, 134);
-                color: #fff;
-            }
-            
-
-      
-    }
-
-   
 
     &__img {
-        width: 100%;
+        width: 50%;
         height: 500px;
-        background-image: url('../img/tree-736885__340.jpg');
+        background-image: url('../img/Beautiful-photos-and-pictures-on-various-subjects-01.jpg.crdownload');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        order: 2;
+
+        @media screen and(max-width: 850px) {
+            height: 400px;
+
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 100%;
+            order: 1;
+            height: 400px;
+        }
     }
 }
-

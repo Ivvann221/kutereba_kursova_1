@@ -1,4 +1,38 @@
-.footer{
-    background-color: black;
-    color: #fff;
+.footer {
+    margin-top: 40px;
+
+    &__content {
+        border-top: 1px solid $primary-color;
+        padding-top: 30px;
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+
+            &__icon {
+                border: 1px solid #000;
+                border-radius: 50%;
+
+                &:hover {
+                    background-color: rgb(226, 229, 229);
+                }
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+                margin: 7px 8px;
+            }
+
+        }
+
+        &_title {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    }
 }

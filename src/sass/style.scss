@@ -1,6 +1,7 @@
 @import "reset_style.scss";
 @import "base/func";
 @import "fonts/font";
+@import "base/variables";
 
 
 @import "../css/bootstrap.min.css";
@@ -8,6 +9,69 @@
 @import "libs/slick.scss";
 
 @import "components/header";
+@import "components/story";
 @import "components/hero";
+@import "components/gallery";
+@import "components/form";
+@import "components/features";
 @import "components/footer";
 
+body {
+    font-family: 'EB Garamond', serif;
+}
+
+.title {
+
+    font-size: 25px;
+}
+.subtitle {
+
+    margin-top: 15px;
+    font-size: 13px;
+    margin-left: 20px;
+    padding-right: 20px;
+}
+.btn {
+    margin-top: 25px;
+    border: 1px solid $primary-color;
+    padding: 4px 8px;
+    text-decoration: none;
+    color: $primary-color;
+    border-radius: 5px;
+    display: inline-block;
+    width: 74px;
+    margin-left: 20px;
+
+    font-size: 14px;
+
+    &:hover {
+        background-color: rgb(136, 134, 134);
+        color: #fff;
+    }
+}
+
+.title-margin {
+    margin-left: 20px;
+}
+
+.form-control {
+    height: 25px;
+}
+
+.form-select {
+    height: 25px;
+    padding: 0px;
+    padding-left: 10px;
+}
+
+textarea.form-control {
+    min-height: 100px;
+}
+
+h1 {
+    font-size: 38px;
+
+    @media screen and (max-width:768px) {
+        font-size: 30px;
+    }
+}

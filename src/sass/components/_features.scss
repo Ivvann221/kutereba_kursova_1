@@ -1,0 +1,113 @@
+.features {
+    margin-top: 70px;
+    &__title {
+        h2 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+    }
+
+    &__grid {
+        margin-top: 50px !important;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto;
+
+        @media screen and(max-width:850px) {
+
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and(max-width:600px) {
+
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+
+    }
+}
+
+.elements {
+    img {
+        width: 33px;
+        height: 33px;
+    }
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    
+    &__subtitle {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 12px;
+    }
+}
+
+#one {
+    border-bottom: 1px solid $primary-color;
+    border-right: 1px solid $primary-color;
+
+    @media screen and(max-width:600px) {
+
+        border-right: none;
+    }
+}
+
+#two {
+    border-bottom: 1px solid $primary-color;
+    border-right: 1px solid $primary-color;
+
+    @media screen and(max-width:850px) {
+
+        border-right: none;
+    }
+}
+
+#three {
+    border-bottom: 1px solid $primary-color;
+
+    @media screen and(max-width:850px) {
+        border-right: 1px solid $primary-color;
+    }
+
+    @media screen and(max-width:600px) {
+
+        border-right: none;
+    }
+}
+
+#four {
+
+    border-right: 1px solid $primary-color;
+
+    @media screen and(max-width:850px) {
+        border-right: none;
+        border-bottom: 1px solid $primary-color;
+    }
+}
+
+#five {
+
+    border-right: 1px solid $primary-color;
+
+    @media screen and(max-width:600px) {
+        border-bottom: 1px solid $primary-color;
+        border-right: none;
+    }
+}
+
+#six {
+    @media screen and(max-width:600px) {
+        border-bottom: 1px solid $primary-color;
+
+    }
+}
