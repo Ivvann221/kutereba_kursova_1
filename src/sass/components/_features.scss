@@ -1,6 +1,8 @@
 .features {
     margin-top: 70px;
-
+    @media screen and (max-width:600px) {
+        margin-top: 20px;
+    }
     &__title {
         h2 {
             text-align: center;
@@ -21,7 +23,7 @@
         }
 
         @media screen and(max-width:600px) {
-
+margin-top: 20px !important;
             grid-template-columns: repeat(1, 1fr);
         }
 

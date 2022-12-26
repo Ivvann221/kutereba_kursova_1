@@ -26,4 +26,8 @@ let slider = $(document).ready(function () {
 $(".menu-collapsed").click(function() {
   $(this).toggleClass("menu-expanded");
 });
+$(".menu-collapsed").click(function() {
+  $(".header__content_logo").toggleClass("header-active");
+});
+
 

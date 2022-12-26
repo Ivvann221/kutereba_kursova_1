@@ -1,14 +1,23 @@
 .gallery {
     padding-top: 70px;
-
+    @media screen and (max-width:600px) {
+        padding-top: 20px;
+    }
 }
 
 .slider-gallery {
     position: relative;
-
+@media screen and (min-width:1200px) {
     &:hover .slick-arrow {
         display: block !important;
     }
+}
+@media screen and (max-width:1200px) {
+    .slick-arrow {
+        display: block !important;
+    }
+}
+   
 
     img {
         width: 100%;
@@ -79,24 +88,27 @@
 }
 
 .slick-prev {
-
+    width: 15px;
+background: url('../img/left.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
     top: 45%;
-    left: 0px;
+    left: 5px;
     z-index: 10;
 
 }
 
 .slick-next {
+    width: 15px;
+    background: url('../img/right.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
     top: 45%;
-    right: 0px;
+    right: 5px;
     z-index: 10;
 
 }

@@ -1,49 +1,49 @@
-<section class="form">
+<section class="form" id="write">
   <div class="container">
     <div class="row d-flex justify-content-center">
       <div class="title text-center">
         <p>Write to us</p>
       </div>
-      <div class="col-10 mt-5">
+      <div class="col-12 col-sm-10 mt-5">
         <form>
           <div class="row mb-3">
             <div class="col-12 col-sm-4">
               <label for="inputEmail4" class="form-label">Name:</label>
-              <input type="text" class="form-control" id="inputEmail4 ">
+              <input type="text" class="form-control" id="inputEmail4" required>
             </div>
             <div class="col-12 col-sm-4">
               <label for="inputEmail4" class="form-label">Email:</label>
-              <input type="email" class="form-control" id="inputEmail4">
+              <input type="email" class="form-control" id="inputEmail4" required>
             </div>
             <div class="col-12 col-sm-4">
               <label for="inputEmail4" class="form-label">Phone:</label>
-              <input type="email" class="form-control" id="inputEmail4" required>
+              <input type="text" class="form-control" id="inputEmail4" required>
             </div>
           </div>
 
           <div class="row mb-3 mt-4">
-            <legend class="col-form-label col-12 col-sm-4 col-md-3 col-lg-2 pt-0">Contact me via</legend>
-
-            <div class="form-check col-4 col-sm-2">
+            <label class="col-form-label col-12 col-lg-2 pt-0">Contact me via</label>
+            <div class="col-4 col-sm-3 col-md-2">
               <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
               <label class="form-check-label" for="gridRadios1">
                 Email
               </label>
             </div>
-            <div class="form-check col-4 col-sm-2">
+            <div class="col-4 col-sm-3 col-md-2">
               <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
               <label class="form-check-label" for="gridRadios2">
                 Phone
               </label>
             </div>
-            <div class="form-check col-4 col-sm-2">
+            <div class="col-4 col-sm-3 col-md-2">
               <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
               <label class="form-check-label" for="gridRadios3">
                 Telegram
               </label>
             </div>
+            
           </div>
-          <div class="row">
+         
             <div class="col-12">
               <label class="form-check-label mb-2" for="gridRadios3">
                 Topic:
@@ -56,15 +56,14 @@
 
               </select>
             </div>
-          </div>
-          <div class="row">
+        
             <div class="col-12">
               <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
             </div>
-          </div>
+      
           <div class="row ">
             <div class="col-9 d-flex flex-column justify-content-center">
               <div class="form-check">
@@ -75,7 +74,7 @@
               </div>
             </div>
             <div class="col-3 d-flex justify-content-end">
-              <a class="btn mt-0" href="">SEND</a>
+              <button class="btn m-0" type="submit">Send</button>
             </div>
           </div>
         </form>

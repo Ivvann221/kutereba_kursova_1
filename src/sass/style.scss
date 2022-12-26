@@ -22,15 +22,18 @@ body {
 
 .title {
 
-    font-size: 25px;
+    font-size: 28px;
 }
 .subtitle {
-
     margin-top: 15px;
-    font-size: 13px;
     margin-left: 20px;
     padding-right: 20px;
-}
+        font-size: 17px;
+        @media screen and (max-width: 850px) {
+            font-size: 15px;
+        } 
+    }
+
 .btn {
     margin-top: 25px;
     border: 1px solid $primary-color;
